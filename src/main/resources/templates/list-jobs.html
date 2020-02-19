@@ -10,7 +10,7 @@
 
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
 
-    <table class="centeredTable job-listing">
+    <table class="centeredTable job-listing" th:fragment="jobLister">
         <tr th:each="job : ${jobs}"> <!-- ${jobs} is arraylist of jobs -->
             <td>
 <!--                <th:block th:text="${job.toString()}"></th:block>-->
